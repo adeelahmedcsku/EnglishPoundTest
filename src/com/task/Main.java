@@ -31,6 +31,14 @@ public class Main {
 //		System.out.println("------------------  Divide by 15 work ------------------------");
 //		res = amountModal3.divide(15).toString();
 //		System.out.println("The result of division by 15 is = "+ res);
+    		AmountModal amountModal1 = new AmountModal("9p 2s 6d");
+    		AmountModal amountModal2 = new AmountModal("5p 17s 8d");
+		System.out.println("Example of chain operation");
+       		System.out.println("First Amount ==> "+"9p 2s 6d");
+       		System.out.println("Second Amount ==> "+"5p 17s 8d");
+       		System.out.println("Multiplier is ==> "+"2");
+	       String res = amountModal1.sum(amountModal2).multiply(2).toString();
+               System.out.println("The result of sum and multiplication is = "+ res);
         while(true)
         {
             UIMenu.showMenu();
